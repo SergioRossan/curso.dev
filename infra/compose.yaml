@@ -1,0 +1,7 @@
+services:
+  databese:
+    image: "postgres:16.11-alpine3.23"
+    environment:
+      POSTGRES_PASSWORD: "lab457"
+    ports:
+      - "5432:5432"
