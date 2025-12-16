@@ -1,5 +1,5 @@
 services:
-  databese:
+  database:
     image: "postgres:16.11-alpine3.23"
     environment:
       POSTGRES_PASSWORD: "lab457"
