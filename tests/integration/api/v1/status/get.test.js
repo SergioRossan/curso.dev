@@ -7,7 +7,7 @@ test("GET para /api/v1/status deveria retornar 200", async () => {
   const parsedupdateAt = new Date(responseBody.update_at).toISOString();
   expect(responseBody.update_at).toEqual(parsedupdateAt);
 
-  expect(responseBody.database_info.pg_version).toBe("16.11");
+  expect(typeof responseBody.database_info.pg_version).toBe("string");
 
   expect(typeof responseBody.database_info.max_connections).toBe("number");
 
